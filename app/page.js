@@ -48,6 +48,7 @@ export default function Home() {
           alt="Profile"
           width={500}
           height={360}
+          preload={true}
           className="rounded-xl object-cover"
         />
       </div>
