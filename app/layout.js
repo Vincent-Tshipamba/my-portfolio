@@ -1,16 +1,18 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Orbitron, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const spaceGrotesk = Space_Grotesk({
+  variable: "--font-space-grotesk",
   subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const orbitron = Orbitron({
+  variable: "--font-orbitron",
   subsets: ["latin"],
+  weight: ["400", "700", "900"],
 });
 
 export const metadata = {
@@ -20,8 +22,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className="min-h-full flex flex-col">
+    <html lang="en" className="dark">
+      <body className={`${spaceGrotesk.variable} ${orbitron.variable} min-h-full flex flex-col`}>
         <Navigation />
         {children}
         <Footer />
