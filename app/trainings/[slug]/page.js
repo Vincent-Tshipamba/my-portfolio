@@ -14,3 +14,9 @@ export default async function TrainingDetails({ params }) {
         <TrainingDetailContent training={training} />
     )
 }
+
+export function generateStaticParams() {
+    return trainingData.map((training) => ({
+        slug: training.slug
+    }))
+}
