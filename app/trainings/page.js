@@ -2,6 +2,11 @@ import Navigation from "@/components/Navigation";
 import { trainingData } from "@/data/data";
 import TrainingDetailContent from "@/components/TrainingDetailContent";
 
+export const metadata = {
+    title: 'Mes trainings | Portfolio',
+    description: 'Découvrez mes projets de développement web : applications React, sites Next.js et plus encore.',
+}
+
 export default function Trainings() {
     return (<>
         <section id="courses" className="py-20">
