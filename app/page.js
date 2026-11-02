@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Tags from "../components/Tags";
-import VincentPic from "../public/vini.jpg"
 import './page.module.css'
 
 export default function Home() {
@@ -44,7 +43,7 @@ export default function Home() {
         </div>
 
         <Image
-          src={VincentPic}
+          src="/vini.jpg"
           alt="Profile"
           width={500}
           height={360}

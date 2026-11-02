@@ -8,7 +8,6 @@ import { ExternalLink } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { projectsData } from "@/data/data";
-import svg from "../../public/placeholder.svg"
 
 export default function Projects() {
     const [currentLang, setCurrentLang] = useState("en")
