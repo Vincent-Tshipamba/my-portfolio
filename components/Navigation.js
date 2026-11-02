@@ -56,22 +56,27 @@ export default function Navigation() {
                     <path d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
             </button>
-            <div id="mobileMenu" className={`absolute ${!isOpen ? 'hidden' : 'flex'} top-16 text-base bg-black flex-col w-full left-0 items-center gap-4`}>
-                <a className="hover:text-indigo-600" href="#">
-                    Products
-                </a>
-                <a className="hover:text-indigo-600" href="#">
-                    Customer Stories
-                </a>
-                <a className="hover:text-indigo-600" href="#">
-                    Pricing
-                </a>
-                <a className="hover:text-indigo-600" href="#">
-                    Docs
-                </a>
+            <div id="mobileMenu" className={`absolute ${!isOpen ? 'hidden' : 'flex'} top-16 text-base bg-black flex-col w-full left-0 items-center gap-4 z-50 p-3`}>
+                <Link className="hover:text-indigo-600" href="/">
+                    Home
+                </Link>
+                <Link className="hover:text-indigo-600" href="/projects">
+                    Projects
+                </Link>
+                <Link className="hover:text-indigo-600" href="/about">
+                    About
+                </Link>
+                <Link className="hover:text-indigo-600" href="/diplomas">
+                    Diplomas
+                </Link>
+                <Link className="hover:text-indigo-600" href="/trainings">
+                    Trainings
+                </Link>
                 <button
                     className="border border-slate-600 hover:bg-slate-800 px-4 py-2 rounded-full text-sm font-medium transition">
-                    Contact
+                    <Link href="/contact">
+                        Contact
+                    </Link>
                 </button>
                 <button
                     className="bg-white hover:shadow-[0px_0px_30px_14px] shadow-[0px_0px_30px_7px] hover:shadow-white/50 shadow-white/50 text-black px-4 py-2 rounded-full text-sm font-medium hover:bg-slate-100 transition duration-300">
