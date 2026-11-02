@@ -27,7 +27,9 @@ export default function ProjectDetailContent({ project }) {
                         <Image
                             src={project.image || "/placeholder.svg"}
                             alt={project.title}
-                            className="w-full h-full object-cover"
+                            fill
+                            loading="eager"
+                            className="object-cover"
                         />
                         <motion.div
                             className="absolute inset-0 bg-primary/20"

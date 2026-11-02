@@ -13,7 +13,9 @@ export default async function ProjectDetail({ params }) {
     }
 
     return (
-        <ProjectDetailContent project={project} />
+        <div className="p-5">
+            <ProjectDetailContent project={project} />
+        </div>
     )
 }
 
